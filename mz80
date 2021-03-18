@@ -1,0 +1,49 @@
+3-80 cm distance range, can be set from the pot behind
+
+Prob çapı: 18 mm, Prob uzunluğu: 45 mm
+
+Çalışma Voltajı: 5V, Akım: 25mA(min) - 100mA(max)   Temp range: -25C - +55C   Tepki süresi: 2ms
+
+Kırmızı kablo : +5V   Yeşil kablo : GND     Sarı kablo : Data     Kahverengi: +5V     Mavi: GND     Siyah: Data 
+
+Obje gelince LOW oluyor
+
+
+
+    sample code1:
+int ledPin = 13;
+int inputPin = 2;
+int val = 0;
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  pinMode(inputPin, INPUT);
+ }
+void loop() {
+  val = digitalRead(inputPin);
+  if (val == HIGH) { 
+    digitalWrite(ledPin, LOW); 
+  } 
+  else {
+    digitalWrite(ledPin, HIGH); 
+  }
+}
+
+
+
+  sample code2:
+void setup() {
+  Serial.begin(9600);
+  pinMode(2, INPUT);
+ }
+void loop() {
+  int irread = digitalRead(2);
+  Serial.println(irread);
+  delay(1);
+}
+
+
+
+sensör tutucu: https://www.robotzade.com/MZ80-Kizilotesi-Sensor-Aparati-Sensor-Tutucu,PR-1047.html
+
+Kızılötesi dalga uzunluğu, Güneş'in doğal ışık spektrumunun bir parçasıdır. İç mekan projeleri için uygundur. 
+Çok güneş alan ve yansıtıcı yüzeyler bulunan dış mekanlarda kullanılması tavsiye edilmez.
