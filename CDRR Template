@@ -1,0 +1,83 @@
+  
+  İçerik: 
+  
+-> Title page, intro, table of contents: 
+(The introduction contains clear statement of the project, the current situation about the work on the project, the scope of the report, organization of the report)
+
+
+
+-> Executive Summary: (The executive summary is professional and creates curiosity in the reader to go further in the report.)
+
+
+-> A detailed description of the overall system 
+Subsistemler hakkında çok ayrıntı burada verilmeyecek, genel ürünü gösteren bir block diagram, flow charts ve technical drawingsler(3D rübrikte kesin istenmiş) verilebilir.
+All control and data signals within the system should be illustrated clearly (???including any feedback paths???). All the blocks and the signals should be clearly labelled.
+!!!Sistem bazındaki modifikasyonlar justificationlar ile birlikte burada verilebilir. Unmodified durumlara da değinmemizi istemişler ama onları subsistem seviyesinde tutabiliriz,
+Burada çok kalabalık yapmayalım.
+Genel sistem seviyesindeki requirementlar burada verilebilir, ilgili subsisteme geçtiğimizde ise burada verdiğimiz requirementı karşılamak için o subsistem seviyesinde hangi
+requirementlar olacak ona değinebiliriz. Rapor içindeki akış ve gösterimleri de daha güzel olur. (Requirementlar için Top-down approach istemişler)
+Requirementlar ile tercihler arasındaki ilişkiden de bahsedilsin.
+Requirementları karşılayabildik mi, hangi şartlar altında hangisini ne kadar karşıladık (ve hangi constraintlerle)?
+Subsistemler arasında sinyaller açısından interfaceleri gösteren bir şema çıkarabiliriz. Subsistem seviyesinde de o subsistem diğer hangi subsistemle ilişki halindeyse
+o aradaki bağlantıyı gösterebiliriz (Overall sistem için koyacağımız şemaya gerekli yere zoom çekip de kolayca gösterebiliriz bunu). Sadece sinyal açısından değil,
+fiziksel olarak da bağlantıların nasıl kurulacağına değinebiliriz bence.
+Karşılaşabileceğimiz hatalar, bu hatalardan bazılarını çözmek için ne yaptık, hala çözemediğimiz hatalar, ürünün hangi beklenmedik durumlar için nasıl bir artısı var (bu
+burada mı olmalı subsystemda mı???)
+Genel bütçe durumu (ayrıntı subsistem seviyesinde de verilebilir, component ve çözüm yolu seçimlerinden de bahsederek) 
+An up-to-date development schedule (with a Gantt Chart).
+A power distribution diagram and a power management analysis (resources and consumption) for the system.
+
+Mask Detection:(Buraya yazılanlar her subsistem için geçerli)
+Subsistem çalışma algoritması gösterilecek (block diagram flow chart vs kullanılabilir)
+Gerekli görülürse çizim konabilir
+Subsistem içinde varsa interfaceler, control ve data sinyalleri gösterilsin
+Modifikasyonlar justificationları ile birlikte, unmodifiedlar da bahsedilsin neden unmodifieda değinerek
+Testler, test planları ve sonuçlar ile bu modifikasyonlar arasında bir ilişki kurulursa güzel olur, test yoksa da her modifikasyona mantıklı sebepler bulalım.
+Modifikasyonlarla birlikte tartıştığımız konularda farklı alternatifler arasında kaldığımız durumlar oldu (hem component bazında, hem çözüm methodu bazında),
+bu alternatiflerden bahsedelim, hangilerinin nasıl avantajları vardı hangi dezavantajları vardı, biz neden bunu seçtik, bunlardan bahsedelim.
+Requirements!  (başlarda verilebilir) Requirementlar ile tercihler arasındaki ilişkiden de bahsedilsin.
+Karşılaşabileceğimiz hatalar, bu hatalardan bazılarını çözmek için ne yaptık, hala çözemediğimiz hatalar, ürünün hangi beklenmedik durumlar için nasıl bir artısı var (bu
+burada mı olmalı overall systemda mı???)
+Bütçe durumu, buna bağlı component ve metod seçimleri
+Subsistemler için de kısa bir power durumundan bahsedelim.
+
+Temperature Measurement:
+
+Visitor Counter:
+
+Screen (Speaker ???) and Door Lock:
+
+
+Conclusion: A conclusion based on the analysis of the solution is included. It also includes concluding remarks about the content presented in the report.
+
+
+Notes:
+   
+-> Raporu yazdıktan sonra subsystem lerde değişiklik yapamıyoruz. (It is expected that essential parts of the system design should not change after the submission of this report)
+-> Executive summary bi outline gibi olmamalı raporu özetlemeli. Sonuçlardan testlerden falan bahsetmemiz lazim. 
+Raporu okumak yerine bunu okuyan biri ne yaptığımızı anlamalı genel olarak.
+-> Raporda konuyu bilmeyen birine anlatir gibi anlatmamız lazım yaptığımız şeyleri.
+-> Bizim çözümümüzü diğer olası çözümlerle objektif olarak karşılaştırmamiz lazim. 
+Neden bu çözümü seçtik ondan bahsetmeliyiz. Veya çözümde değişikliğe gittiysek neden gittik onu açıklamaliyiz.
+-> Software codes should not be given (only partially in appendices, if absolutely needed). 
+Only Software architectural notes and details can be presented as a part of the main text.
+-> Please avoid dumping data sheets, reference designs, etc. in the text as these are distracting from the focus of your report. 
+Only segments from relevant data sheets can be given, and preferably in appendices.
+-> Using illustrative diagrams, tables, and lists are strongly recommended over writing long explanatory texts.
+
+
+  Önemli:
+  
+Performance requirements - cost (budget) - schedule - other system constraints
+Requirementlar ve elde ettiğimiz sonuçlar için crosscheck table
+Grammarly
+Compliance with Requirements: Design decisions are clearly correlated with the requirements. The match between the design decisions and the requirements is
+shown by a crosscheck table, and it is justified that the design decisions perfectly address all the requirements. Multiple (and possibly conflicting) requirements
+are clearly discussed and engineering trade-offs done to address these requirements are indicated. Compliance with the requirements is fully
+justified with associated test results. A discussion on the robustness of the system against possible error sources is provided. 
+Tests procedures and assessment of test results: A test plan for each subsystem is provided along with the expected quantitative test results for success. 
+The match between the tests and the  requirements is shown by a crosscheck table, and it is justified that the tests perfectly address all the requirements. 
+Test results, encountered problems, and implemented/proposed solutions are clearly indicated and discussed.
+(Son iki başlığı önemli bulduğum için burada tekrar ettim.)
+
+
